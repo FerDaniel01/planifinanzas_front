@@ -57,7 +57,7 @@ export default {
                 
             };
             axios
-                .post("http://127.0.0.1:8000/transacciones/agregar/", datosJSON)
+                .post("https://planifinanzassprint2.herokuapp.com/transacciones/agregar/", datosJSON)
                 .then(respuesta =>{
                     alert(respuesta.data.mensaje);
 

@@ -46,7 +46,7 @@ export default {
     },
     beforeCreate: function (){
         axios
-        .get("http://127.0.0.1:8000/transacciones/")
+        .get("https://planifinanzassprint2.herokuapp.com/transacciones/")
         .then(respuesta=>{
             this.transacciones=respuesta.data;
         })
